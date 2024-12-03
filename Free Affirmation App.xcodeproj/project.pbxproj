@@ -1,0 +1,917 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		C974918B2CCC8672003425CB /* Free_Affirmation_AppApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = C974918A2CCC8672003425CB /* Free_Affirmation_AppApp.swift */; };
+		C974918D2CCC8672003425CB /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C974918C2CCC8672003425CB /* ContentView.swift */; };
+		C974918F2CCC8676003425CB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C974918E2CCC8676003425CB /* Assets.xcassets */; };
+		C97491922CCC8676003425CB /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C97491912CCC8676003425CB /* Preview Assets.xcassets */; };
+		C974919C2CCC8676003425CB /* Free_Affirmation_AppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C974919B2CCC8676003425CB /* Free_Affirmation_AppTests.swift */; };
+		C97491A62CCC8677003425CB /* Free_Affirmation_AppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C97491A52CCC8677003425CB /* Free_Affirmation_AppUITests.swift */; };
+		C97491A82CCC8677003425CB /* Free_Affirmation_AppUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C97491A72CCC8677003425CB /* Free_Affirmation_AppUITestsLaunchTests.swift */; };
+		C97491B52CCC8B98003425CB /* Affirmations.swift in Sources */ = {isa = PBXBuildFile; fileRef = C97491B42CCC8B98003425CB /* Affirmations.swift */; };
+		C97491B72CCCA041003425CB /* affirmations.json in Resources */ = {isa = PBXBuildFile; fileRef = C97491B62CCCA041003425CB /* affirmations.json */; };
+		C97491B82CCCA38C003425CB /* affirmations.json in Resources */ = {isa = PBXBuildFile; fileRef = C97491B62CCCA041003425CB /* affirmations.json */; };
+		C97491B92CCCA38D003425CB /* affirmations.json in Resources */ = {isa = PBXBuildFile; fileRef = C97491B62CCCA041003425CB /* affirmations.json */; };
+		C97491BA2CCCA84F003425CB /* Free_Affirmation_AppApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = C974918A2CCC8672003425CB /* Free_Affirmation_AppApp.swift */; };
+		C97491BB2CCCA84F003425CB /* Free_Affirmation_AppApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = C974918A2CCC8672003425CB /* Free_Affirmation_AppApp.swift */; };
+		C97491BC2CCCA85F003425CB /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C974918C2CCC8672003425CB /* ContentView.swift */; };
+		C97491BD2CCCA85F003425CB /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C974918C2CCC8672003425CB /* ContentView.swift */; };
+		C97491BE2CCCAB6B003425CB /* Affirmations.swift in Sources */ = {isa = PBXBuildFile; fileRef = C97491B42CCC8B98003425CB /* Affirmations.swift */; };
+		C97491BF2CCCAB6C003425CB /* Affirmations.swift in Sources */ = {isa = PBXBuildFile; fileRef = C97491B42CCC8B98003425CB /* Affirmations.swift */; };
+		C97491C72CCCAC9C003425CB /* WidgetKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C97491C62CCCAC9C003425CB /* WidgetKit.framework */; };
+		C97491C92CCCAC9C003425CB /* SwiftUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C97491C82CCCAC9C003425CB /* SwiftUI.framework */; };
+		C97491D82CCCAC9F003425CB /* AffirmationsWidgetExtension.appex in Embed Foundation Extensions */ = {isa = PBXBuildFile; fileRef = C97491C42CCCAC9C003425CB /* AffirmationsWidgetExtension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		C97491E22CCCAF21003425CB /* WidgetKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C97491C62CCCAC9C003425CB /* WidgetKit.framework */; };
+		C97491E32CCCAF21003425CB /* SwiftUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C97491C82CCCAC9C003425CB /* SwiftUI.framework */; };
+		C97491E62CCCAF21003425CB /* AffirmationsWidgetBundle.swift in Sources */ = {isa = PBXBuildFile; fileRef = C97491E52CCCAF21003425CB /* AffirmationsWidgetBundle.swift */; };
+		C97491E82CCCAF21003425CB /* AffirmationsWidgetLiveActivity.swift in Sources */ = {isa = PBXBuildFile; fileRef = C97491E72CCCAF21003425CB /* AffirmationsWidgetLiveActivity.swift */; };
+		C97491EA2CCCAF21003425CB /* AffirmationsWidget.swift in Sources */ = {isa = PBXBuildFile; fileRef = C97491E92CCCAF21003425CB /* AffirmationsWidget.swift */; };
+		C97491EC2CCCAF21003425CB /* AppIntent.swift in Sources */ = {isa = PBXBuildFile; fileRef = C97491EB2CCCAF21003425CB /* AppIntent.swift */; };
+		C97491EE2CCCAF23003425CB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C97491ED2CCCAF23003425CB /* Assets.xcassets */; };
+		C97491F22CCCAF23003425CB /* AffirmationsWidgetExtension.appex in Embed Foundation Extensions */ = {isa = PBXBuildFile; fileRef = C97491E12CCCAF21003425CB /* AffirmationsWidgetExtension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		C97491982CCC8676003425CB /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = C974917F2CCC8671003425CB /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = C97491862CCC8671003425CB;
+			remoteInfo = "Free Affirmation App";
+		};
+		C97491A22CCC8677003425CB /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = C974917F2CCC8671003425CB /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = C97491862CCC8671003425CB;
+			remoteInfo = "Free Affirmation App";
+		};
+		C97491D62CCCAC9F003425CB /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = C974917F2CCC8671003425CB /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = C97491C32CCCAC9C003425CB;
+			remoteInfo = AffirmationsWidgetExtension;
+		};
+		C97491F02CCCAF23003425CB /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = C974917F2CCC8671003425CB /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = C97491E02CCCAF21003425CB;
+			remoteInfo = AffirmationsWidgetExtension;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		C97491DC2CCCAC9F003425CB /* Embed Foundation Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				C97491D82CCCAC9F003425CB /* AffirmationsWidgetExtension.appex in Embed Foundation Extensions */,
+				C97491F22CCCAF23003425CB /* AffirmationsWidgetExtension.appex in Embed Foundation Extensions */,
+			);
+			name = "Embed Foundation Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		C97491872CCC8672003425CB /* Free Affirmation App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Free Affirmation App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		C974918A2CCC8672003425CB /* Free_Affirmation_AppApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Free_Affirmation_AppApp.swift; sourceTree = "<group>"; };
+		C974918C2CCC8672003425CB /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		C974918E2CCC8676003425CB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		C97491912CCC8676003425CB /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		C97491972CCC8676003425CB /* Free Affirmation AppTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Free Affirmation AppTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		C974919B2CCC8676003425CB /* Free_Affirmation_AppTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Free_Affirmation_AppTests.swift; sourceTree = "<group>"; };
+		C97491A12CCC8677003425CB /* Free Affirmation AppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Free Affirmation AppUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		C97491A52CCC8677003425CB /* Free_Affirmation_AppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Free_Affirmation_AppUITests.swift; sourceTree = "<group>"; };
+		C97491A72CCC8677003425CB /* Free_Affirmation_AppUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Free_Affirmation_AppUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		C97491B42CCC8B98003425CB /* Affirmations.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Affirmations.swift; sourceTree = "<group>"; };
+		C97491B62CCCA041003425CB /* affirmations.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = affirmations.json; sourceTree = "<group>"; };
+		C97491C42CCCAC9C003425CB /* AffirmationsWidgetExtension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = AffirmationsWidgetExtension.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		C97491C62CCCAC9C003425CB /* WidgetKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WidgetKit.framework; path = System/Library/Frameworks/WidgetKit.framework; sourceTree = SDKROOT; };
+		C97491C82CCCAC9C003425CB /* SwiftUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SwiftUI.framework; path = System/Library/Frameworks/SwiftUI.framework; sourceTree = SDKROOT; };
+		C97491E12CCCAF21003425CB /* AffirmationsWidgetExtension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = AffirmationsWidgetExtension.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		C97491E52CCCAF21003425CB /* AffirmationsWidgetBundle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AffirmationsWidgetBundle.swift; sourceTree = "<group>"; };
+		C97491E72CCCAF21003425CB /* AffirmationsWidgetLiveActivity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AffirmationsWidgetLiveActivity.swift; sourceTree = "<group>"; };
+		C97491E92CCCAF21003425CB /* AffirmationsWidget.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AffirmationsWidget.swift; sourceTree = "<group>"; };
+		C97491EB2CCCAF21003425CB /* AppIntent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppIntent.swift; sourceTree = "<group>"; };
+		C97491ED2CCCAF23003425CB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		C97491EF2CCCAF23003425CB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		C97491842CCC8671003425CB /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C97491942CCC8676003425CB /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C974919E2CCC8677003425CB /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C97491C12CCCAC9C003425CB /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C97491C92CCCAC9C003425CB /* SwiftUI.framework in Frameworks */,
+				C97491C72CCCAC9C003425CB /* WidgetKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C97491DE2CCCAF21003425CB /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C97491E32CCCAF21003425CB /* SwiftUI.framework in Frameworks */,
+				C97491E22CCCAF21003425CB /* WidgetKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		C974917E2CCC8671003425CB = {
+			isa = PBXGroup;
+			children = (
+				C97491892CCC8672003425CB /* Free Affirmation App */,
+				C974919A2CCC8676003425CB /* Free Affirmation AppTests */,
+				C97491A42CCC8677003425CB /* Free Affirmation AppUITests */,
+				C97491E42CCCAF21003425CB /* AffirmationsWidget */,
+				C97491C52CCCAC9C003425CB /* Frameworks */,
+				C97491882CCC8672003425CB /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		C97491882CCC8672003425CB /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				C97491872CCC8672003425CB /* Free Affirmation App.app */,
+				C97491972CCC8676003425CB /* Free Affirmation AppTests.xctest */,
+				C97491A12CCC8677003425CB /* Free Affirmation AppUITests.xctest */,
+				C97491C42CCCAC9C003425CB /* AffirmationsWidgetExtension.appex */,
+				C97491E12CCCAF21003425CB /* AffirmationsWidgetExtension.appex */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		C97491892CCC8672003425CB /* Free Affirmation App */ = {
+			isa = PBXGroup;
+			children = (
+				C974918A2CCC8672003425CB /* Free_Affirmation_AppApp.swift */,
+				C97491B42CCC8B98003425CB /* Affirmations.swift */,
+				C97491B62CCCA041003425CB /* affirmations.json */,
+				C974918C2CCC8672003425CB /* ContentView.swift */,
+				C974918E2CCC8676003425CB /* Assets.xcassets */,
+				C97491902CCC8676003425CB /* Preview Content */,
+			);
+			path = "Free Affirmation App";
+			sourceTree = "<group>";
+		};
+		C97491902CCC8676003425CB /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				C97491912CCC8676003425CB /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		C974919A2CCC8676003425CB /* Free Affirmation AppTests */ = {
+			isa = PBXGroup;
+			children = (
+				C974919B2CCC8676003425CB /* Free_Affirmation_AppTests.swift */,
+			);
+			path = "Free Affirmation AppTests";
+			sourceTree = "<group>";
+		};
+		C97491A42CCC8677003425CB /* Free Affirmation AppUITests */ = {
+			isa = PBXGroup;
+			children = (
+				C97491A52CCC8677003425CB /* Free_Affirmation_AppUITests.swift */,
+				C97491A72CCC8677003425CB /* Free_Affirmation_AppUITestsLaunchTests.swift */,
+			);
+			path = "Free Affirmation AppUITests";
+			sourceTree = "<group>";
+		};
+		C97491C52CCCAC9C003425CB /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				C97491C62CCCAC9C003425CB /* WidgetKit.framework */,
+				C97491C82CCCAC9C003425CB /* SwiftUI.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		C97491E42CCCAF21003425CB /* AffirmationsWidget */ = {
+			isa = PBXGroup;
+			children = (
+				C97491E52CCCAF21003425CB /* AffirmationsWidgetBundle.swift */,
+				C97491E72CCCAF21003425CB /* AffirmationsWidgetLiveActivity.swift */,
+				C97491E92CCCAF21003425CB /* AffirmationsWidget.swift */,
+				C97491EB2CCCAF21003425CB /* AppIntent.swift */,
+				C97491ED2CCCAF23003425CB /* Assets.xcassets */,
+				C97491EF2CCCAF23003425CB /* Info.plist */,
+			);
+			path = AffirmationsWidget;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		C97491862CCC8671003425CB /* Free Affirmation App */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C97491AB2CCC8677003425CB /* Build configuration list for PBXNativeTarget "Free Affirmation App" */;
+			buildPhases = (
+				C97491832CCC8671003425CB /* Sources */,
+				C97491842CCC8671003425CB /* Frameworks */,
+				C97491852CCC8671003425CB /* Resources */,
+				C97491DC2CCCAC9F003425CB /* Embed Foundation Extensions */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				C97491D72CCCAC9F003425CB /* PBXTargetDependency */,
+				C97491F12CCCAF23003425CB /* PBXTargetDependency */,
+			);
+			name = "Free Affirmation App";
+			productName = "Free Affirmation App";
+			productReference = C97491872CCC8672003425CB /* Free Affirmation App.app */;
+			productType = "com.apple.product-type.application";
+		};
+		C97491962CCC8676003425CB /* Free Affirmation AppTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C97491AE2CCC8677003425CB /* Build configuration list for PBXNativeTarget "Free Affirmation AppTests" */;
+			buildPhases = (
+				C97491932CCC8676003425CB /* Sources */,
+				C97491942CCC8676003425CB /* Frameworks */,
+				C97491952CCC8676003425CB /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				C97491992CCC8676003425CB /* PBXTargetDependency */,
+			);
+			name = "Free Affirmation AppTests";
+			productName = "Free Affirmation AppTests";
+			productReference = C97491972CCC8676003425CB /* Free Affirmation AppTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		C97491A02CCC8677003425CB /* Free Affirmation AppUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C97491B12CCC8677003425CB /* Build configuration list for PBXNativeTarget "Free Affirmation AppUITests" */;
+			buildPhases = (
+				C974919D2CCC8677003425CB /* Sources */,
+				C974919E2CCC8677003425CB /* Frameworks */,
+				C974919F2CCC8677003425CB /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				C97491A32CCC8677003425CB /* PBXTargetDependency */,
+			);
+			name = "Free Affirmation AppUITests";
+			productName = "Free Affirmation AppUITests";
+			productReference = C97491A12CCC8677003425CB /* Free Affirmation AppUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+		C97491C32CCCAC9C003425CB /* AffirmationsWidgetExtension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C97491D92CCCAC9F003425CB /* Build configuration list for PBXNativeTarget "AffirmationsWidgetExtension" */;
+			buildPhases = (
+				C97491C02CCCAC9C003425CB /* Sources */,
+				C97491C12CCCAC9C003425CB /* Frameworks */,
+				C97491C22CCCAC9C003425CB /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = AffirmationsWidgetExtension;
+			productName = AffirmationsWidgetExtension;
+			productReference = C97491C42CCCAC9C003425CB /* AffirmationsWidgetExtension.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
+		C97491E02CCCAF21003425CB /* AffirmationsWidgetExtension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C97491F32CCCAF23003425CB /* Build configuration list for PBXNativeTarget "AffirmationsWidgetExtension" */;
+			buildPhases = (
+				C97491DD2CCCAF21003425CB /* Sources */,
+				C97491DE2CCCAF21003425CB /* Frameworks */,
+				C97491DF2CCCAF21003425CB /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = AffirmationsWidgetExtension;
+			productName = AffirmationsWidgetExtension;
+			productReference = C97491E12CCCAF21003425CB /* AffirmationsWidgetExtension.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		C974917F2CCC8671003425CB /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1530;
+				LastUpgradeCheck = 1530;
+				TargetAttributes = {
+					C97491862CCC8671003425CB = {
+						CreatedOnToolsVersion = 15.3;
+					};
+					C97491962CCC8676003425CB = {
+						CreatedOnToolsVersion = 15.3;
+						TestTargetID = C97491862CCC8671003425CB;
+					};
+					C97491A02CCC8677003425CB = {
+						CreatedOnToolsVersion = 15.3;
+						TestTargetID = C97491862CCC8671003425CB;
+					};
+					C97491C32CCCAC9C003425CB = {
+						CreatedOnToolsVersion = 15.3;
+					};
+					C97491E02CCCAF21003425CB = {
+						CreatedOnToolsVersion = 15.3;
+					};
+				};
+			};
+			buildConfigurationList = C97491822CCC8671003425CB /* Build configuration list for PBXProject "Free Affirmation App" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = C974917E2CCC8671003425CB;
+			productRefGroup = C97491882CCC8672003425CB /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				C97491862CCC8671003425CB /* Free Affirmation App */,
+				C97491962CCC8676003425CB /* Free Affirmation AppTests */,
+				C97491A02CCC8677003425CB /* Free Affirmation AppUITests */,
+				C97491C32CCCAC9C003425CB /* AffirmationsWidgetExtension */,
+				C97491E02CCCAF21003425CB /* AffirmationsWidgetExtension */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		C97491852CCC8671003425CB /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C97491922CCC8676003425CB /* Preview Assets.xcassets in Resources */,
+				C974918F2CCC8676003425CB /* Assets.xcassets in Resources */,
+				C97491B72CCCA041003425CB /* affirmations.json in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C97491952CCC8676003425CB /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C97491B82CCCA38C003425CB /* affirmations.json in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C974919F2CCC8677003425CB /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C97491B92CCCA38D003425CB /* affirmations.json in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C97491C22CCCAC9C003425CB /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C97491DF2CCCAF21003425CB /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C97491EE2CCCAF23003425CB /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		C97491832CCC8671003425CB /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C97491B52CCC8B98003425CB /* Affirmations.swift in Sources */,
+				C974918D2CCC8672003425CB /* ContentView.swift in Sources */,
+				C974918B2CCC8672003425CB /* Free_Affirmation_AppApp.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C97491932CCC8676003425CB /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C97491BE2CCCAB6B003425CB /* Affirmations.swift in Sources */,
+				C97491BA2CCCA84F003425CB /* Free_Affirmation_AppApp.swift in Sources */,
+				C974919C2CCC8676003425CB /* Free_Affirmation_AppTests.swift in Sources */,
+				C97491BC2CCCA85F003425CB /* ContentView.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C974919D2CCC8677003425CB /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C97491A62CCC8677003425CB /* Free_Affirmation_AppUITests.swift in Sources */,
+				C97491A82CCC8677003425CB /* Free_Affirmation_AppUITestsLaunchTests.swift in Sources */,
+				C97491BD2CCCA85F003425CB /* ContentView.swift in Sources */,
+				C97491BF2CCCAB6C003425CB /* Affirmations.swift in Sources */,
+				C97491BB2CCCA84F003425CB /* Free_Affirmation_AppApp.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C97491C02CCCAC9C003425CB /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C97491DD2CCCAF21003425CB /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C97491EA2CCCAF21003425CB /* AffirmationsWidget.swift in Sources */,
+				C97491EC2CCCAF21003425CB /* AppIntent.swift in Sources */,
+				C97491E62CCCAF21003425CB /* AffirmationsWidgetBundle.swift in Sources */,
+				C97491E82CCCAF21003425CB /* AffirmationsWidgetLiveActivity.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		C97491992CCC8676003425CB /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = C97491862CCC8671003425CB /* Free Affirmation App */;
+			targetProxy = C97491982CCC8676003425CB /* PBXContainerItemProxy */;
+		};
+		C97491A32CCC8677003425CB /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = C97491862CCC8671003425CB /* Free Affirmation App */;
+			targetProxy = C97491A22CCC8677003425CB /* PBXContainerItemProxy */;
+		};
+		C97491D72CCCAC9F003425CB /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = C97491C32CCCAC9C003425CB /* AffirmationsWidgetExtension */;
+			targetProxy = C97491D62CCCAC9F003425CB /* PBXContainerItemProxy */;
+		};
+		C97491F12CCCAF23003425CB /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = C97491E02CCCAF21003425CB /* AffirmationsWidgetExtension */;
+			targetProxy = C97491F02CCCAF23003425CB /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		C97491A92CCC8677003425CB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.4;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		C97491AA2CCC8677003425CB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.4;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		C97491AC2CCC8677003425CB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"Free Affirmation App/Preview Content\"";
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "idkmycompany.Free-Affirmation-App";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		C97491AD2CCC8677003425CB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"Free Affirmation App/Preview Content\"";
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "idkmycompany.Free-Affirmation-App";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		C97491AF2CCC8677003425CB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.4;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "idkmycompany.Free-Affirmation-AppTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Free Affirmation App.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/Free Affirmation App";
+			};
+			name = Debug;
+		};
+		C97491B02CCC8677003425CB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.4;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "idkmycompany.Free-Affirmation-AppTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Free Affirmation App.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/Free Affirmation App";
+			};
+			name = Release;
+		};
+		C97491B22CCC8677003425CB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "idkmycompany.Free-Affirmation-AppUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "Free Affirmation App";
+			};
+			name = Debug;
+		};
+		C97491B32CCC8677003425CB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "idkmycompany.Free-Affirmation-AppUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "Free Affirmation App";
+			};
+			name = Release;
+		};
+		C97491DA2CCCAC9F003425CB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_WIDGET_BACKGROUND_COLOR_NAME = WidgetBackground;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = AffirmationsWidget/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = AffirmationsWidget;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "idkmycompany.Free-Affirmation-App.AffirmationsWidget";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		C97491DB2CCCAC9F003425CB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_WIDGET_BACKGROUND_COLOR_NAME = WidgetBackground;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = AffirmationsWidget/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = AffirmationsWidget;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "idkmycompany.Free-Affirmation-App.AffirmationsWidget";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		C97491F42CCCAF23003425CB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_WIDGET_BACKGROUND_COLOR_NAME = WidgetBackground;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = AffirmationsWidget/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = AffirmationsWidget;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "idkmycompany.Free-Affirmation-App.AffirmationsWidget";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		C97491F52CCCAF23003425CB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_WIDGET_BACKGROUND_COLOR_NAME = WidgetBackground;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = AffirmationsWidget/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = AffirmationsWidget;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "idkmycompany.Free-Affirmation-App.AffirmationsWidget";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		C97491822CCC8671003425CB /* Build configuration list for PBXProject "Free Affirmation App" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C97491A92CCC8677003425CB /* Debug */,
+				C97491AA2CCC8677003425CB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C97491AB2CCC8677003425CB /* Build configuration list for PBXNativeTarget "Free Affirmation App" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C97491AC2CCC8677003425CB /* Debug */,
+				C97491AD2CCC8677003425CB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C97491AE2CCC8677003425CB /* Build configuration list for PBXNativeTarget "Free Affirmation AppTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C97491AF2CCC8677003425CB /* Debug */,
+				C97491B02CCC8677003425CB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C97491B12CCC8677003425CB /* Build configuration list for PBXNativeTarget "Free Affirmation AppUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C97491B22CCC8677003425CB /* Debug */,
+				C97491B32CCC8677003425CB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C97491D92CCCAC9F003425CB /* Build configuration list for PBXNativeTarget "AffirmationsWidgetExtension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C97491DA2CCCAC9F003425CB /* Debug */,
+				C97491DB2CCCAC9F003425CB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C97491F32CCCAF23003425CB /* Build configuration list for PBXNativeTarget "AffirmationsWidgetExtension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C97491F42CCCAF23003425CB /* Debug */,
+				C97491F52CCCAF23003425CB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = C974917F2CCC8671003425CB /* Project object */;
+}
